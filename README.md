@@ -39,4 +39,12 @@ npm run build:prod
 npm run build:stage
 ```
 
+#### 如果想在nginx上线,注意配置转发和删除.env.production的里面的内容(以生产环境打包为例)
 
+* 需要删除Vue_APP_BASE_API里面的内容~
+
+![.env.production文件](README.assets/202205161644946.png)
+
+* nginx转发设置
+
+  ![nginx转发设置](README.assets/202205161646156.png)
